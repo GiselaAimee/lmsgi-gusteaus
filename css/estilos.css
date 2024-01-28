@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#contenedor {
+    background-color: #fff8f0;
+    font-family: 'Times New Roman', serif;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+div.encabezado {
+    background-image: url(../imgs/guesteaus.png);
+    background-position: center;
+    color: #5a3e36;
+    font-family: 'Georgia', serif;
+    font-size: 36px;
+    text-align: center;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu ul li a {
+    background-color: #a77e58;
+    color: #ffffff;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.menu ul li a:hover,
+.menu ul li.active a {
+    color: #5a3e36;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+}
+
+div.contenido {
+    float: left;
+    width: 70%; 
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff8f0;
+    color: #5a3e36;
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    border: 1px solid #5a3e36;
+    box-sizing: border-box;
+}
+
+div.sidebar {
+    background-color: #ecdcc6;
+    color: #5a3e36;
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    float: right;
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #5a3e36;; 
+    box-sizing: border-box; 
+}
+
+div.pie {
+    background-color: #5a3e36;
+    color: #ecdcc6;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px solid #5a3e36;; 
+    clear: both; 
+}
+
+div.pie a {
+    color: #ecdcc6;
+    margin: 0 10px;
+}
+@media screen and (max-width: 768px) {
+    div.contenido{
+        width: 100%;
+        padding: 10px;
+    }
+    div.sidebar {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+    nav.menu-hamburguesa {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .encabezado {
+        font-size: 20px; 
+    }
+    
+    .encabezado img {
+            max-width: 100%; 
+            height: auto;
+        }
+    
+        div.contenido {
+            font-sSize: 14px;
+        }
+    
+        .menu-hamburguesa input[type="checkbox"],
+        .menu-hamburguesa .fa-bars,
+        .menu-hamburguesa .fa-times {
+            width: 30px; 
+            height: 30px;
+        }
+    
+        .menu {
+            padding: 0;
+            margin: 10px 0; 
+        }
+    
+        .menu li {
+            padding: 10px; 
+        }
+    }
